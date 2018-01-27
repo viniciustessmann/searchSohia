@@ -11,13 +11,9 @@ class Logic
      */
     public function think($row)
     {        
-        $response  = [];
+        $file = new \Tessmann\File();
 
-        foreach ($row as $x => $room) {
-            $row[$x]['score'] = floatval($room['time'] / $room['chance']);
-        }
-
-        return $this->array_sort($row, 'score', SORT_ASC);
+        return $file->writeLine($this->array_sort($row, 'score', SORT_ASC));
     }
 
     private function array_sort($array, $on, $order=SORT_ASC)

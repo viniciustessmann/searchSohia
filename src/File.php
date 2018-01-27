@@ -69,7 +69,8 @@ class File
                     $response[$x][] = [
                         'room' => $data[0],
                         'chance' => $data[1],
-                        'time' => $data[2]
+                        'time' => $data[2],
+                        'score' => floatval($data[2] / $data[1])
                     ];
                 }
                 $x++;
@@ -85,4 +86,48 @@ class File
             ];
         }
     }
+    
+    /**
+     * The function to write each line of txt with the best option
+     * @param Array objs
+     * @return String response
+     */
+    public function writeLine($objs)
+    {
+        $response = '';
+        
+        foreach ($objs as $item) {
+            $response .= $item['room'] . ',';
+        }
+
+        return rtrim($response,",");
+    }
+
+    /**
+     * The function to download the txt
+     * @param Array rows
+     * @return void
+     */
+    public function output($rows)
+    {
+        $file = fopen($this::DIRFILES . '/output.txt', "w");
+
+        foreach ($rows as $row) {
+            fwrite($file, $row . "\n\r");
+        }
+
+        fclose($file);
+        $file = $this::DIRFILES . '/output.txt';
+
+        header("Content-Type: application/force-download");
+        header("Content-Type: application/octet-stream;");
+        header("Content-Length:".filesize($file));
+        header("Content-disposition: attachment; filename='output.txt'");
+        header("Pragma: no-cache");
+        header("Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0");
+        header("Expires: 0");
+        readfile($file);
+        flush();
+    }
+
 }
