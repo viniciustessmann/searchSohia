@@ -64,9 +64,14 @@ class File
                 }
 
                 foreach (explode(';', $rowTxt) as $line) {
-                    $response[$x][] = explode(',', $line);
+
+                    $data = explode(',', $line);
+                    $response[$x][] = [
+                        'room' => $data[0],
+                        'chance' => $data[1],
+                        'time' => $data[2]
+                    ];
                 }
-                
                 $x++;
             }
 
