@@ -1,0 +1,19 @@
+{
+    "name": "search-sophia",
+    "description": "Sofia is the name of your cat, and you need to find her as soon as possible in your house.",
+    "authors": [
+        {
+            "name": "Vinícius Schlee Tessmann",
+            "email": "viniciusschleetessmann@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.8"
+    },
+    "license": "proprietary",
+    "autoload": {
+      "psr-4": {
+        "Tessmann\\": "src/"
+      }
+    }
+  }
