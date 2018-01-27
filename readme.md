@@ -5,7 +5,7 @@ You will receive a file where each line represents your "home" and your rooms. T
 
 {NAME1},{CHANCE1},{TIME1};{NAME2},{CHANCE2},{TIME2};{NAMEn},{CHANCEn},{TIMEn};{NAME99},{CHANCE99},{TIME99}
 
-# File: Remessa.txt
+# File: Input.txt
 	- Room, 15.5, Kitchen, 20.8, Room, 30.10, Bathroom, 6.2, Attic, 12,20, Garden, 17,18
 	- Suite, 20.12, Bathroom, 8.8, Garden, 8.20, Basement, 15,18, Room, 15,8, Room, 34,23
 	- Room, 51.15; Kitchen, 49.12
