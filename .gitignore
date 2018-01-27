@@ -1,3 +1,7 @@
 #Files
 files/*
 !files/.gitkeep 
+
+#vendor
+vendor/*
+!vendor/.gitkeep 

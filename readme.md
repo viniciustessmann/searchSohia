@@ -1,15 +1,27 @@
-# Onde está Sófia?
+# Where is Sofia?
 
-Sofia é o nome da sua gata, e você precisa encontrá-la o mais rápido possível em sua casa.
-Você receberá um arquivo onde cada linha representa a sua "residência" e seus aposentos. Os dados estarão estruturados no seguinte formato:
+Sofia is the name of your cat, and you need to find her as soon as possible in your house.
+You will receive a file where each line represents your "home" and your rooms. The data will be structured in the following format:
 
-{NOME1},{CHANCE1},{TEMPO1};{NOME2},{CHANCE2},{TEMPO2};{NOMEn},{CHANCEn},{TEMPOn};{NOME99},{CHANCE99},{TEMPO99}
+{NAME1},{CHANCE1},{TIME1};{NAME2},{CHANCE2},{TIME2};{NAMEn},{CHANCEn},{TIMEn};{NAME99},{CHANCE99},{TIME99}
 
-# Onde:
-	- {NOMEn}   = Nome do aposento ou parte da casa
-	- {CHANCEn} = Chances de encontrar o gato no aposento, em %
-	- {TEMPOn}  = Tempo gasto para procurar a gata, em segundos
+# File: Remessa.txt
+	- Room, 15.5, Kitchen, 20.8, Room, 30.10, Bathroom, 6.2, Attic, 12,20, Garden, 17,18
+	- Suite, 20.12, Bathroom, 8.8, Garden, 8.20, Basement, 15,18, Room, 15,8, Room, 34,23
+	- Room, 51.15; Kitchen, 49.12
+	- Room, 34.10, Room, 32.12, Kitchen, 33.8
 
-# Exercício:
-Para cada linha (situação), você deverá informar a sequência mais eficiente para encontrar Sofia em um arquivo "retorno.txt", que 
-deverá estar formatado conforme o exemplo:
+# Where:
+	- {NAMEn}   = Name of the room or part of the house
+	- {CHANCEn} = Chances of finding the cat in the room in%
+	- {TIMEn}  = Time spent searching for the cat, in seconds
+
+# Exercise:
+For each line (situation), you must enter the most efficient sequence to find Sofia in a "return.txt" file, which
+formatted as the example:
+
+# File: return.txt
+	- Bedroom, Kitchen, Living Room, Bathroom, Attic, Garden
+	- Kitchen, Living Room, Bedroom
+	- Bathroom, Bedroom, Living Room, Garden, Suite
+	- Kitchen, Bedroom
