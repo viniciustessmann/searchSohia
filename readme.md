@@ -1,27 +1,34 @@
-# Where is Sofia?
+# Onde está Sofia?
 
-Sofia is the name of your cat, and you need to find her as soon as possible in your house.
-You will receive a file where each line represents your "home" and your rooms. The data will be structured in the following format:
+Sofia é o nome da sua gata, e você precisa encontrá-la o mais rápido possível em sua casa.
+Você receberá um arquivo onde cada linha representa a sua "residência" e seus aposentos. Os dados estarão estruturados no seguinte formato:
 
-{NAME1},{CHANCE1},{TIME1};{NAME2},{CHANCE2},{TIME2};{NAMEn},{CHANCEn},{TIMEn};{NAME99},{CHANCE99},{TIME99}
+{NOME1},{CHANCE1},{TEMPO1};{NOME2},{CHANCE2},{TEMPO2};{NOMEn},{CHANCEn},{TEMPOn};{NOME99},{CHANCE99},{TEMPO99}
 
 # File: Input.txt
-	- Room, 15.5, Kitchen, 20.8, Room, 30.10, Bathroom, 6.2, Attic, 12,20, Garden, 17,18
-	- Suite, 20.12, Bathroom, 8.8, Garden, 8.20, Basement, 15,18, Room, 15,8, Room, 34,23
-	- Room, 51.15; Kitchen, 49.12
-	- Room, 34.10, Room, 32.12, Kitchen, 33.8
+	- Quarto,15,5;Cozinha,20,8;Sala,30,10;Banheiro,6,2;Sótão,12,20;Jardim,17,18
+	- Suíte,20,12;Banheiro,8,8;Jardim,8,20;Porão,15,18;Quarto,15,8;Sala,34,23
+	- Quarto,51,15;Cozinha,49,12
+	- Sala,34,10;Quarto,32,12;Cozinha,33,8
 
-# Where:
-	- {NAMEn}   = Name of the room or part of the house
-	- {CHANCEn} = Chances of finding the cat in the room in%
-	- {TIMEn}  = Time spent searching for the cat, in seconds
+# Onde:
+	- {NOMEn}   = Nome do aposento ou parte da casa
+	- {CHANCEn} = Chances de encontrar o gato no aposento, em %
+	- {TEMPOn}  = Tempo gasto para procurar a gata, em segundos
 
-# Exercise:
-For each line (situation), you must enter the most efficient sequence to find Sofia in a "return.txt" file, which
-formatted as the example:
+# Exercicio:
+Para cada linha (situação), você deverá informar a sequência mais eficiente para encontrar Sofia em um arquivo "retorno.txt", que 
+deverá estar formatado conforme o exemplo:
 
 # File: return.txt
-	- Bedroom, Kitchen, Living Room, Bathroom, Attic, Garden
-	- Kitchen, Living Room, Bedroom
-	- Bathroom, Bedroom, Living Room, Garden, Suite
-	- Kitchen, Bedroom
+	- Quarto,Cozinha,Sala,Banheiro,Sótão,Jardim
+	- Cozinha,Sala,Quarto
+	- Banheiro,Quarto,Sala,Jardim,Suíte
+	- Cozinha,Quarto
+
+
+# Informações sobre o desenvolvedor
+ - Nome: Vinícius Schlee Tessmann
+ - Email: viniciusschleetessmann@gmail.com
+
+ 
